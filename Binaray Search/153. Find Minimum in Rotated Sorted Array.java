@@ -18,12 +18,12 @@ class Solution {
                 
             }
 
-            else if(nums[mid]>=nums[low] && nums[mid]>=nums[end])
+            else if(nums[mid]>=nums[low] && nums[mid]>=nums[end]) //Unsorted array on right side
             {   
                  low=mid+1;
             }
 
-            else if(nums[mid]<=nums[end] )
+            else if(nums[mid]<=nums[end] ) //Unsorted array on left side
             {
                 end=mid-1;
             }
